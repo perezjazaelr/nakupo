@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMBEosaurus</title>
+    <link rel="Website icon" type="png" href="Untitled-1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <h3 onclick="subtopic()">PHP Introduction</h3>
+            <img onclick="home()" src="Untitled-1.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="header">
+                <h2>PHP - Magic Constant</h2>
+            </div>
+            <div class="description">
+                <h6 class="marg-bot">The magical constants in PHP are predefined constants. They are available to any script on which they run, and they change depending on where they are used. All these "magical" constants are resolved at compile time, unlike regular constants, which are resolved at runtime.</h6>
+                <h6 class="marg-bot">There are nine magical constants in PHP. These special constants are case insensitive.</h6>
+            </div>
+            <div class="sub-header">
+                <div class="line"></div>
+                <h4>SYNTAX</h4>
+                <div class="line"></div>
+            </div>
+            <div class="syntax">
+                <div class="syntax-container">
+                    <div class="ios">
+                        <div class="circle-ios ios1"></div>
+                        <div class="circle-ios ios2" ></div>
+                        <div class="circle-ios ios3"></div>
+                    </div>
+                    <div class="sub-context dark-syntax">
+                        <p><span class="opse-numbers">1.</span><span class="pink">&lt?php</span></p>
+                        <p><span class="numbers">2.</span><span class="yellow">namespace myspace;</span></p>
+                        <p><span class="numbers">3.</span><span class="yellow">class myPeanut {</span></p>
+                        <p><span class="numbers">4.</span><span class="yellow"> public function __construct() {</span></p>
+                        <p><span class="numbers">5.</span><span class="yellow">  echo "Name of the class: " . __CLASS__ . " in " . __NAMESPACE__ . "\n\n";</span></p>
+                        <p><span class="numbers">6.</span><span class="yellow">  }    </span></p>
+                        <p><span class="numbers">7.</span><span class="yellow">}    </span></p>
+                        <p><span class="numbers">8.</span><span class="yellow">$class_name = __NAMESPACE__ . '\myPeanut'; </span></p>
+                        <p><span class="numbers">9.</span><span class="yellow">$a = new $class_name;</span></p>
+                        <p><span class="numbers">10.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">11.</span><span class="yellow"> $x="Hello World";</span></p>
+                        <p><span class="numbers">12.</span><span class="yellow">echo "$x. The current Line number is " . __LINE__ . ".";</span></p>
+                        <p><span class="numbers">13.</span><span class="yellow">   $x="Hello World";</span></p>
+                        <p><span class="numbers">14.</span><span class="yellow">  echo "\n\n$x. Current PHP script name is " . __FILE__ . ".";</span></p>
+                        <p><span class="numbers">15.</span><span class="yellow">   $x="Hello World";</span></p>
+                        <p><span class="numbers">16.</span><span class="yellow"> echo "\n\n$x. Directory of the Current PHP script name is " . __DIR__ . ".\n\n";</span></p>
+                        <p><span class="numbers">17.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">18.</span><span class="yellow">   function hello(){</span></p>
+                        <p><span class="numbers">19.</span><span class="yellow">$x="Hello World";</span></p>
+                        <p><span class="numbers">20.</span><span class="yellow"> echo "$x. The function name is ". __FUNCTION__ . "\n\n";  </span></p>
+                        <p><span class="numbers">21.</span><span class="yellow"> }</span></p>
+                        <p><span class="numbers">22.</span><span class="yellow">    hello();  
+                        </span></p>
+                        <p><span class="numbers">23.</span><span class="yellow">class myclass {  </span></p>
+                        <p><span class="numbers">24.</span><span class="yellow"> public function __construct() {  </span></p>
+                        <p><span class="numbers">25.</span><span class="yellow">echo "Inside the constructor of ". __CLASS__ . PHP_EOL;</span></p>
+                        <p><span class="numbers">26.</span><span class="yellow"> } </span></p>
+                        <p><span class="numbers">27.</span><span class="yellow"> function getClassName(){         </span></p>
+                        <p><span class="numbers">28.</span><span class="yellow">echo "from an instance method of " . __CLASS__ . "\n\n";  </span></p>
+                        <p><span class="numbers">29.</span><span class="yellow">     }    </span></p>
+                        <p><span class="numbers">30.</span><span class="yellow"> }    </span></p>
+                        <p><span class="numbers">31.</span><span class="yellow">  $obj = new myclass; </span></p>
+                        <p><span class="numbers">32.</span><span class="yellow">$obj->getClassName();</span></p>
+                        <p><span class="numbers">33.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">34.</span><span class="yellow">class myLove {  </span></p>
+                        <p><span class="numbers">35.</span><span class="yellow"> public function __construct() {    </span></p>
+                        <p><span class="numbers">36.</span><span class="yellow"> echo "Calling " . __METHOD__ . " of " . __CLASS__ ."\n";</span></p>
+                        <p><span class="numbers">37.</span><span class="yellow">  }    </span></p>
+                        <p><span class="numbers">38.</span><span class="yellow">   $obj->mymethod();</span></p>
+                        <p><span class="numbers">39.</span><span class="yellow">trait mytrait {</span></p>
+                        <p><span class="numbers">40.</span><span class="yellow">public function hello() {</span></p>
+                        <p><span class="numbers">41.</span><span class="yellow">echo "Hello World from " . __TRAIT__ ."\n\n";</span></p>
+                        <p><span class="numbers">42.</span><span class="yellow">   }</span></p>
+                        <p><span class="numbers">43.</span><span class="yellow"> }</span></p>
+                        <p><span class="numbers">44.</span><span class="yellow">  class myHoney {</span></p>
+                        <p><span class="numbers">45.</span><span class="yellow">  use mytrait;</span></p>
+                        <p><span class="numbers">46.</span><span class="yellow">  }</span></p>
+                        <p><span class="numbers">47.</span><span class="yellow">$obj = new myHoney();</span></p>
+                        <p><span class="numbers">48.</span><span class="yellow">  $obj->hello();</span></p>
+                        <p><span class="numbers">49.</span><span class="yellow">     namespace myspace;</span></p>
+                        <p><span class="numbers">50.</span><span class="yellow">class mySugar {  </span></p>
+                        <p><span class="numbers">51.</span><span class="yellow">public function __construct() {    </span></p>
+                        <p><span class="numbers">52.</span><span class="yellow">echo "Name of the class: " . mySugar::class ;</span></p>
+                        <p><span class="numbers">50.</span><span class="yellow">     }    </span></p>
+                        <p><span class="numbers">53.</span><span class="yellow">  }    </span></p>
+                        <p><span class="numbers">54.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">55.</span><span class="yellow"> use myspace;  </span></p>
+                        <p><span class="numbers">56.</span><span class="yellow"> $a = new mySugar;</span></p>
+                        <p><span class="numbers">57.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">58.</span><span class="yellow"></span></p>
+                        <p><span class="opse-numbers">59.</span><span class="pink">&lt?php</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="left-footer box-footer">
+                    <div class="one foot">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 onclick="home()">HOME</h3>
+                    </div>
+                    <div class="two foot">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>091122334455</h3>
+                    </div>
+                    <div class="three">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="right-footer box-footer">
+                    <h3>ABOUT</h3>
+                    <h3>"Lambeosaurus Hypertext Preprocessor (PHP)" is the name of this webpage. It looks to be a table of contents listing different PHP topics, suggesting that it is a resource for learning PHP. </h3>
+                </div>
+            </div>
+            <div class="developer">
+                <h3><span>Developed by:</span><i> LAMBEosaurus</i></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scriot.js"></script>
+</body>
+</html>

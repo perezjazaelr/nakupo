@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMBEosaurus</title>
+    <link rel="Website icon" type="png" href="Untitled-1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <h3 onclick="subtopic()">PHP Introduction</h3>
+            <img onclick="home()" src="Untitled-1.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="header">
+                <h2>PHP - Strings</h2>
+            </div>
+            <div class="description">
+                <h6 class="marg-bot">A string is a sequence of characters, like 'PHP supports string operations.' A string in PHP as an array of bytes and an integer indicating the length of the buffer. In PHP, a character is the same as a byte. This means that PHP only supports a 256-character set, and hence does not offer native Unicode support.</h6>
+                <h6 class="marg-bot">PHP supports single quoted as well as double quoted string formation. Both the representations 'this is a simple string' as well as "this is a simple string" are valid. PHP also has Heredoc and Newdoc representations of string data type.</h6>
+            </div>
+            <div class="sub-header">
+                <div class="line"></div>
+                <h4>SYNTAX</h4>
+                <div class="line"></div>
+            </div>
+            <div class="syntax">
+                <div class="syntax-container">
+                    <div class="ios">
+                        <div class="circle-ios ios1"></div>
+                        <div class="circle-ios ios2" ></div>
+                        <div class="circle-ios ios3"></div>
+                    </div>
+                    <div class="sub-context dark-syntax">
+                        <p><span class="opse-numbers">1.</span><span class="pink">&lt?php</span></p>
+                        <p><span class="numbers">2.</span><span class="yellow">//Single Quoted The escape sequences such as "\r" or "\n" will be treated literally and their special meaning will not be interpreted. The variables too will not be expanded if they appear in a single quoted string.</span></p>
+                        <p><span class="numbers">3.</span><span class="yellow">$str = 'This will not expand: \n a newline';</span></p>
+                        <p><span class="numbers">4.</span><span class="yellow">echo $str . PHP_EOL;</span></p>
+                        <p><span class="numbers">5.</span><span class="yellow">$x=100;</span></p>
+                        <p><span class="numbers">6.</span><span class="yellow">$str = 'Value of x = $x';</span></p>
+                        <p><span class="numbers">7.</span><span class="yellow">echo $str;</span></p>
+                        <p><span class="numbers">8.</span><span class="yellow">echo "\n\n";</span></p>
+                        <p><span class="numbers">9.</span><span class="yellow">$price = 200;</span></p>
+                        <p><span class="numbers">10.</span><span class="yellow">echo "Price = \$ $price\n\n";</span></p>
+                        <p><span class="numbers">11.</span><span class="yellow">$str = "\120\110\120";</span></p>
+                        <p><span class="numbers">12.</span><span class="yellow">echo "PHP with Octal: " . $str;</span></p>
+                        <p><span class="numbers">13.</span><span class="yellow">echo PHP_EOL;</span></p>
+                        <p><span class="numbers">14.</span><span class="yellow">$str = "\x50\x48\x50";</span></p>
+                        <p><span class="numbers">15.</span><span class="yellow">echo "PHP with Hexadecimal: " . $str;</span></p>
+                        <p><span class="numbers">16.</span><span class="yellow">echo "\n\n";</span></p>
+                        <p><span class="numbers">17.</span><span class="yellow">//String Concatenation</span></p>
+                        <p><span class="numbers">18.</span><span class="yellow">$string1="Integrative Programming";</span></p>
+                        <p><span class="numbers">19.</span><span class="yellow">$string2="and Technologies";</span></p>
+                        <p><span class="numbers">20.</span><span class="yellow">echo $string1 . " " . $string2;</span></p>
+                        <p><span class="numbers">21.</span><span class="yellow">echo "\n\n";</span></p>
+                        <p><span class="numbers">22.</span><span class="yellow">//The strlen() function is used to find the length of a string.</span></p>
+                        <p><span class="numbers">23.</span><span class="yellow">echo strlen("Para sa Streets");</span></p>
+                        <p><span class="numbers">24.</span><span class="yellow">echo "\n\n";</span></p>
+                        <p><span class="numbers">25.</span><span class="yellow">//The strpos() function is used to search for a string or character within a string.</span></p>
+                        <p><span class="numbers">26.</span><span class="yellow">echo strpos("Mahal ko o Mahal ako!","ako");</span></p>
+                        <p><span class="numbers">27.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">28.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">29.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">30.</span><span class="yellow"></span></p>
+                        <p><span class="opse-numbers">31.</span><span class="pink">?&gt</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="left-footer box-footer">
+                    <div class="one foot">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 onclick="home()">HOME</h3>
+                    </div>
+                    <div class="two foot">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>091122334455</h3>
+                    </div>
+                    <div class="three">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="right-footer box-footer">
+                    <h3>ABOUT</h3>
+                    <h3>"Lambeosaurus Hypertext Preprocessor (PHP)" is the name of this webpage. It looks to be a table of contents listing different PHP topics, suggesting that it is a resource for learning PHP. </h3>
+                </div>
+            </div>
+            <div class="developer">
+                <h3><span>Developed by:</span><i> LAMBEosaurus</i></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scriot.js"></script>
+</body>
+</html>

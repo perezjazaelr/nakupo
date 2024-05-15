@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMBEosaurus</title>
+    <link rel="Website icon" type="png" href="Untitled-1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <h3 onclick="crtlState()">PHP Control Statements</h3>
+            <img onclick="home()" src="Untitled-1.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="header">
+                <h2>PHP - Foreach Loop</h2>
+            </div>
+            <div class="description">
+                <h6 class="marg-bot">The foreach construct in PHP is specially meant for iterating over arrays. 
+                       If you try to use it on a variable with a different data type, PHP raises an error.</h6>
+                <h6 class="marg-bot"> The first type of syntax above shows a parenthesis in front of the foreach keyword. 
+                       The name of the array to be traversed is then followed by the as keyword and then a variable.</h6>
+                <h6 class="marg-bot">When the fist iteration starts, the first element in the array is assigned to the variable. 
+                       After the looping block is over, the variable takes the value of the next element and repeats the 
+                       statements in the loop body till the elements in the array are exhausted</h6>
+            </div>
+            <div class="sub-header">
+                <div class="line"></div>
+                <h4>SYNTAX</h4>
+                <div class="line"></div>
+            </div>
+            <div class="syntax">
+                <div class="syntax-container">
+                    <div class="ios">
+                        <div class="circle-ios ios1"></div>
+                        <div class="circle-ios ios2" ></div>
+                        <div class="circle-ios ios3"></div>
+                    </div>
+                    <div class="sub-context dark-syntax">
+                        <p><span class="opse-numbers">1.</span><span class="pink">&lt?php</span></p>
+                        <p><span class="numbers">2.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">3.</span><span class="yellow"> $arr = array("john", "Periculo", "Jaz", "Berna", "bogart");</span></p>
+                        <p><span class="numbers">4.</span><span class="yellow"> foreach ($arr as $val) {</span></p>
+                        <p><span class="numbers">5.</span><span class="yellow"> echo "$val \n";</span></p>
+                        <p><span class="numbers">6.</span><span class="yellow"></span></p>
+                        <p><span class="numbers">7.</span><span class="yellow">  }</span></p>
+                        <p><span class="numbers">8.</span><span class="yellow"></span></p>
+                        <p><span class="opse-numbers">9.</span><span class="pink">?&gt</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="left-footer box-footer">
+                    <div class="one foot">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 onclick="home()">HOME</h3>
+                    </div>
+                    <div class="two foot">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>091122334455</h3>
+                    </div>
+                    <div class="three">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="right-footer box-footer">
+                    <h3>ABOUT</h3>
+                    <h3>"Lambeosaurus Hypertext Preprocessor (PHP)" is the name of this webpage. It looks to be a table of contents listing different PHP topics, suggesting that it is a resource for learning PHP. </h3>
+                </div>
+            </div>
+            <div class="developer">
+                <h3><span>Developed by:</span><i> LAMBEosaurus</i></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scriot.js"></script>
+</body>
+</html>

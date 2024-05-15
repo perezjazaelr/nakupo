@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMBEosaurus</title>
+    <link rel="Website icon" type="png" href="Untitled-1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="navbar">
+            <h3 onclick="operator()">PHP Operators</h3>
+            <img onclick="home()" src="Untitled-1.png" alt="">
+        </div>
+        <div class="content-container">
+            <div class="header">
+                <h2>PHP - Spread Operators</h2>
+            </div>
+            <div class="description">
+                <h6>PHP recognizes the three dots symbol (...) as the spread operator. The spread operator is a convenient and concise way to work with arrays and iterables, making code more expressive and readable. It simplifies tasks such as array merging, function parameter passing, and iterable unpacking. However, it's worth noting that the spread operator does not modify the original arrays or iterables; it only creates copies or unpacks elements for temporary use.</h6>
+
+            </div>
+            <div class="sub-header">
+                <div class="line"></div>
+                <h4>SYNTAX</h4>
+                <div class="line"></div>
+            </div>
+            <div class="syntax">
+                <div class="syntax-container">
+                    <div class="ios">
+                        <div class="circle-ios ios1"></div>
+                        <div class="circle-ios ios2" ></div>
+                        <div class="circle-ios ios3"></div>
+                    </div>
+                    <div class="sub-context dark-syntax">
+                        <p><span class="opse-numbers">1.</span><span class="pink">&lt?php</span></p>
+                        <p><span class="numbers">2.</span><span class="yellow">echo "-UNPACKING ARRAYS-" . PHP_EOL;</span></p>
+                        <p><span class="numbers">3.</span><span class="yellow">$array1 = [1, 2, 3];</span></p>
+                        <p><span class="numbers">4.</span><span class="yellow">$array2 = [...$array1, 4, 5, 6];</span></p>
+                        <p><span class="numbers">5.</span><span class="yellow">print_r($array2);</span></p>
+                        <p><span class="numbers">6.</span><span class="yellow">echo "-MERGE FUNCTION-" . PHP_EOL;</span></p>
+                        <p><span class="numbers">7.</span><span class="yellow">$arr1 = [1,2,3];</span></p>
+                        <p><span class="numbers">8.</span><span class="yellow">$arr2 = [4,5,6];</span></p>
+                        <p><span class="numbers">9.</span><span class="yellow">$arr3 = array_merge($arr1, $arr2);</span></p>
+                        <p><span class="numbers">10.</span><span class="yellow">print_r($arr3);</span></p>
+                        <p><span class="numbers">11.</span><span class="yellow">echo "-UNPACKING FUNCTION ARGUMENT-" . PHP_EOL;</span></p>
+                        <p><span class="numbers">12.</span><span class="yellow">function example($arg1, $arg2, $arg3 , $arg4) {</span></p>
+                        <p><span class="numbers">13.</span><span class="yellow">    echo "Arguments: $arg1, $arg2, $arg3 , $arg4";</span></p>
+                        <p><span class="numbers">14.</span><span class="yellow">}</span></p>
+                        <p><span class="numbers">15.</span><span class="yellow">$arguments = ['foo', 'bar', 'baz', 'hak'];</span></p>
+                        <p><span class="numbers">16.</span><span class="yellow">example(...$arguments);</span></p>
+                        <p><span class="opse-numbers">17.</span><span class="pink">?&gt</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="left-footer box-footer">
+                    <div class="one foot">
+                        <i class="fa-solid fa-house"></i>
+                        <h3 onclick="home()">HOME</h3>
+                    </div>
+                    <div class="two foot">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>091122334455</h3>
+                    </div>
+                    <div class="three">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="right-footer box-footer">
+                    <h3>ABOUT</h3>
+                    <h3>"Lambeosaurus Hypertext Preprocessor (PHP)" is the name of this webpage. It looks to be a table of contents listing different PHP topics, suggesting that it is a resource for learning PHP. </h3>
+                </div>
+            </div>
+            <div class="developer">
+                <h3><span>Developed by:</span><i> LAMBEosaurus</i></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scriot.js"></script>
+</body>
+</html>
